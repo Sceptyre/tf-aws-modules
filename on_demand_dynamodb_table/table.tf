@@ -9,7 +9,7 @@ resource "aws_dynamodb_table" "table" {
 
     server_side_encryption {
         enabled = true
-        kms_key_arn = var.KMSKeyARN
+        kms_key_arn = var.kms_key_arn
     }
 
     attribute {
