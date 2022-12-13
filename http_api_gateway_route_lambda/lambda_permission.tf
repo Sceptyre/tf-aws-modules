@@ -1,5 +1,5 @@
 resource "aws_lambda_permission" "lambda_permission" {
-    statement_id = "${data.aws_lambda_function.lambda.function_name}-${data.random_id.id.hex}"
+    statement_id = "${data.aws_lambda_function.lambda.function_name}-${resource.random_id.id.hex}"
     action = "lambda:InvokeFunction"
     function_name = data.aws_lambda_function.lambda.function_name
     principal = "apigateway.amazonaws.com"
