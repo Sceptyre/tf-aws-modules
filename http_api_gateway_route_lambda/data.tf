@@ -1,5 +1,5 @@
 data "aws_apigatewayv2_api" "api_gateway" {
-    api_id = var.api_gateway_api_id
+    api_id = var.api_gateway_id
 }
 
 data "aws_lambda_function" "lambda" {
