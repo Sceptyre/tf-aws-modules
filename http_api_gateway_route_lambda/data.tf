@@ -5,3 +5,7 @@ data "aws_apigatewayv2_api" "api_gateway" {
 data "aws_lambda_function" "lambda" {
     function_name = var.lambda_fn_name
 }
+
+resource "random_id" "id" {
+    byte_length = 8
+}
